@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MY Title</title>
+<script src="main.js"></script>
+</head>
+
+<body>
+
+<!--second task start-->
+<div id="question-frontend"></div>
+<script>
+let userAnswer = confirm("Are You Front Developer?");
+if (userAnswer) {
+document.getElementById("question-frontend").innerHTML = "User is a developer";
+}
+else {
+document.getElementById("question-frontend").innerHTML = "User is not a developer";
+}
+</script>
+<!--second task end--> 
+
+<!--third task start-->
+<p class="shopping-list"></p>
+<script>
+let productChoose = prompt("Please write name of product");
+{document.getElementsByClassName("shopping-list")[0].innerHTML = productChoose;}
+</script>
+
+<!--third task end-->
+
+<!--fourth task start-->
+<ul>
+<li>Milk</li>
+<li>Cream</li>
+<li id="bread">Bread</li>
+<li>Juice</li>
+</ul>
+<script>
+let listDel=document.getElementById('bread');
+listDel.remove();
+</script>
+<!--fourth task end-->
+    
+    
+<!--fith task start-->
+   <div id="yourtotalprice"></div> 
+<script>
+    let itemName = prompt('Write Item Name');
+    let itemPrice = prompt('Write Item Price');
+  
+    {document.getElementById("yourtotalprice").innerHTML = itemPrice;}
+    
+</script>
+    
+<!--fith task end-->
+
+
+
+
+
+</body>
+</html>
